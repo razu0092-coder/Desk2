@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Template — RAZU</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">
+        <img src="img/logo.svg" alt="Logo" class="logo" />
+        <span>Simple Template</span>
+      </a>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Clean HTML & CSS Template</h1>
+        <p>A minimal, responsive starter template with an image folder included.</p>
+        <a class="btn" href="#features">See features</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <article class="card">
+        <h3>Responsive</h3>
+        <p>Works well on mobile, tablet, and desktop without additional frameworks.</p>
+      </article>
+      <article class="card">
+        <h3>Simple</h3>
+        <p>Easy to customize: edit <code>index.html</code> and <code>style.css</code>.</p>
+      </article>
+      <article class="card">
+        <h3>Ready Image Folder</h3>
+        <p>Drop your images into the <code>img/</code> folder and reference them in HTML.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with ❤️ — Simple Template • © <span id="year"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    // simple script to update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
